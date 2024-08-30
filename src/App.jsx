@@ -1,14 +1,13 @@
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Navbar from "./components/Navbar/Navbar"
 
 function App() {
-
   return (
-    <Router>
-        <div className="w-full min-h-screen flex flex-col bg-neutral-50 text-neutral-50">
+    <>
+      <Router>
+        <div className="w-full min-h-screen flex flex-col bg-neutral-50 text-neutral-600">
           {/* Navbar */}
-          {/* <Navbar /> */}
-          navbar
+          <Navbar />
 
           {/* Routes */}
           {/* <Routes>
@@ -18,8 +17,10 @@ function App() {
           {/* Footer */}
           {/* <Footer /> */}
           footer
+
         </div>
-    </Router>
+      </Router>
+    </>
   )
 }
 
